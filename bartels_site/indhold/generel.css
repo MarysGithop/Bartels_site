@@ -1,3 +1,15 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /*fonts*/
 
 html {
@@ -28,10 +40,49 @@ p {
 
 /*FOOTER*/
 
-/*MENU*/
+/* -------- WEB --------- */
+@media (min-width: 700px) {
+  /*****************FOOTER*********************/
+  footer {
+    background-color: #9ea289;
+    margin-top: 100px;
+  }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  .grid_1_1_1_1_1 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    padding-top: 80px;
+    padding-bottom: 30px;
+  }
+
+  .link {
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    left: 35%;
+  }
+  .kontakt {
+    color: #ffff;
+    gap: 10px;
+    margin: 30px;
+  }
+  .kontakt2 {
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    width: 5%;
+    margin: 30px;
+    padding-bottom: 80px;
+  }
+  .insta {
+    grid-column: 1/2;
+  }
+  .face {
+    grid-column: 2/3;
+  }
+
+  /*************FOOTER SLUT********************/
 }
+
+/*MENU*/
