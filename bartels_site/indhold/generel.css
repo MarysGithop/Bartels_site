@@ -1,0 +1,27 @@
+/*fonts*/
+
+html {
+  --primary: red;
+  --secondary: white;
+  --tertiary: green;
+}
+
+h1 {
+  /* = Primary/Brand Color */
+
+  color: var(--primary);
+}
+
+h2 {
+  color: var(--primary);
+}
+
+p {
+  color: var(--primary);
+}
+
+* {
+  background-color: var(--secondary);
+}
+
+/*footer tertiary*/
