@@ -2,28 +2,39 @@
   margin: 2%;
 }
 
-.grid_legacy {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
+@media (min-width: 700px) {
+  .grid_legacy {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 
-.grid_legacy1920 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  .grid_legacy1920 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  h2 {
+    text-align: center;
+  }
 }
 
 /*tden øverste overskrift på siden*/
 .overskrift {
-  background-color: grey;
+  background-color: rgb(213, 204, 204);
+}
+
+.bartelsdesignlegacy {
+  color: black;
 }
 
 /*der er to forskellige h2er underoverskriften øverste på siden og årstal*/
 h2 {
   font-size: 50px;
+  text-align: center;
 }
 
 .underoverskrift {
   font-size: 20px;
+  color: black;
 }
 
 /*the legacy timeline overskrift*/
@@ -65,7 +76,7 @@ h2 {
 }
 
 #menuToggle a:hover {
-  color: tomato;
+  color: #8c615d;
 }
 
 #menuToggle input {
@@ -91,7 +102,7 @@ h2 {
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background: #cdcdcd;
+  background: black;
   border-radius: 3px;
 
   z-index: 1;
@@ -146,7 +157,7 @@ h2 {
   padding-top: 125px;
   left: 0;
 
-  background: #ededed;
+  background: white;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -168,3 +179,43 @@ h2 {
 #menuToggle input:checked ~ ul {
   transform: none;
 }
+
+/*****************FOOTER*********************/
+footer {
+  background-color: #9ea289;
+  margin-top: 100px;
+}
+
+.grid_1_1_1_1_1 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+
+.link {
+  position: absolute;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  left: 35%;
+}
+.kontakt {
+  gap: 10px;
+  margin: 30px;
+}
+.kontakt2 {
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  width: 5%;
+  margin: 30px;
+  padding-bottom: 80px;
+}
+.insta {
+  grid-column: 1/2;
+}
+.face {
+  grid-column: 2/3;
+}
+/*************FOOTER SLUT********************/
