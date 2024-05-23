@@ -12,6 +12,12 @@ img {
 
 /*fonts*/
 
+h1 {
+  font-family: "Trirong", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
 html {
   --primary: #8c615d;
   --secondary: white;
@@ -70,7 +76,7 @@ p {
   }
   .kontakt2 {
     display: grid;
-    grid-template-columns: 1fr, 1fr;
+    grid-template-columns: 1fr 1fr;
     width: 5%;
     margin: 30px;
     padding-bottom: 80px;
