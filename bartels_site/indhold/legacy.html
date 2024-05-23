@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html lang="da">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="legacy.css">
     <link rel="stylesheet" href="generel.css">
+    <link rel="stylesheet" href="legacy.css">
 
     <style>
         img {
-            width: 80%;
+            width: 100%;
         }
     </style>
 
@@ -20,51 +19,76 @@
 
 <body>
     <header>
+        <div class="logo">
+            <a href="index.html"> <img src="assets/logo.png" alt="logo"></a>
+        </div>
         <nav>
-            <ul class="menu">
-                <li><a href="index.html">Forside</a></li>
-                <li><a href="madeamano.html">Made a mando</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="legacy.html">Desgin Legacy</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-            </ul>
-            <div class="burger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
+            <nav role="navigation">
+                <div id="menuToggle">
+                    <!--
+                    A fake / hidden checkbox is used as click reciever,
+                    so you can use the :checked selector on it.
+                    -->
+                    <input type="checkbox" />
+
+                    <!--
+                    Some spans to act as a hamburger.
+                    
+                    They are acting like a real hamburger,
+                    not that McDonalds stuff.
+                    -->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                    <!--
+                    Too bad the menu has to be inside of the button
+                    but hey, it's pure CSS magic.
+                    -->
+                    <ul id="menu">
+                        <li><a href="index.html">Forside</a></li>
+                        <li><a href="madeamano.html">Made a mando</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="legacy.html">Design Legacy</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+            </nav>
         </nav>
 
     </header>
 
-    <img src="legacy.jpg" alt="legacyforsidebillede">
-    <h1>The Bartels Design Legacy</h1>
-    <h2>Everlasting and beautiful, Danish designs throughout four generations</h2>
+    <img src="assets/legacy.webp" alt="legacyforsidebillede">
 
-    <h1>The Legacy timeline</h1>
+    <div class="overskrift">
+        <h1 class="bartelsdesignlegacy">The Bartels Design Legacy</h1>
+        <h2 class="underoverskrift">Everlasting and beautiful, Danish designs throughout four generations</h2>
+    </div>
 
+    <h1 class="timeline">The Legacy timeline</h1>
 
-
-
-
-
-    <div class="grid_legacy">
+    <section class="grid_legacy1920">
         <div>
-            <p>The Danish shoe brand, Bartels since 1920, was first established under the name 'Bartels Damernes Sko' 
+            <p>The Danish shoe brand, Bartels since 1920, was first established under the name 'Bartels Damernes
+                Sko'
                 by Louie
                 and
-                Emma Bartels. During the WWI, Emma and Louie moved from Germany to Denmark with the dream of starting up
+                Emma Bartels. During the WWI, Emma and Louie moved from Germany to Denmark with the dream of
+                starting up
                 their
                 own shoe
                 factory founded on high quality, comfort, and impeccable craftsmanship, all wrapped in beautiful
                 designs. In
                 their
-                apartment in Sommerstedsgade in Copenhagen, Bartels since 1920 took its first steps onto the timeless
+                apartment in Sommerstedsgade in Copenhagen, Bartels since 1920 took its first steps onto the
+                timeless
                 designs
                 that still
                 prevail today.</p>
         </div>
-
+        <div>
+            <h2>1920</h2>
+        </div>
         <div>
             <p>In the 1920's, Bartels Damernes Sko took off, and the brand quickly became known for its feminine and
                 delicate
@@ -76,32 +100,24 @@
                 designed by the Bartels, and in order to produce shoes of the highest quality, skilled Italian
                 shoemakers
                 traveled from
-                Italy up to the factory in Copenhagen to share their extensive knowledge, and handcrafted each pair of
+                Italy up to the factory in Copenhagen to share their extensive knowledge, and handcrafted each pair
+                of
                 shoes.
                 From this
-                on, the perfect fusion of Danish design and Italian craft was created - a fusion that still exists in
+                on, the perfect fusion of Danish design and Italian craft was created - a fusion that still exists
+                in
                 the
                 Bartels as you
                 see them today.</p>
-
         </div>
+    </section>
 
-    </div>
-
-
-
-    <h2>1920</h2>
-
-
-
-    <h2>1963</h2>
-
+    <h2 class="årstal">1963</h2>
 
     <div class="grid_legacy">
-
-
-
-
+        <div>
+            <img class="billedeafopbevaring" src="assets/opbevaringsrum.webp" alt="opbevaringsrum">
+        </div>
         <div>
             <p>In the glorious 1960's Bartels Damernes Sko was in its absolute prime. The designs were immensely
                 popular, and
@@ -115,10 +131,12 @@
                 was also
                 chosen
                 to represent European shoe design in America - a tremendous honor for the small Bartels family.</p>
-
         </div>
+    </div>
 
+    <h2 class="årstal">1981</h2>
 
+    <div class="grid_legacy">
         <div>
             <p>In the pulsing 80's, Bartels Damernes Sko was led by Eva's father and aunt, who were the third generation
                 of
@@ -133,7 +151,39 @@
                 stayed
                 dormant
                 until it was revived by its fourth generation in 2017 - namely Eva.</p>
+        </div>
+        <div>
+            <img src="assets/evasbutik.webp" alt="evasbutik">
+        </div>
+    </div>
 
+    <h2 class="årstal">2017</h2>
+
+    <div class="grid_legacy">
+
+        <div>
+            <img class="billedafeva" src="assets/eva.webp" alt="eva">
+        </div>
+        <div>
+            <p>Today, Bartels is steered by Eva Bartels, the great-granddaughter of Louie and Emma Bartels. The love for
+                shoes
+                has
+                always flown through Eva's veins. With a degree in shoe craft from Milan, numerous years spent on
+                industry
+                research,and
+                learning the family business in and out, Eva revived Bartels Damernes Sko in 2017 as Bartels since 1920
+                -but
+                with her
+                own, unique twist. With a curious mindset that creatively plays with modern nostalgia, Eva blends the
+                original
+                Bartels
+                designs with new, precious materials. Now, Eva has launched three Bartels since 1920 models, and in
+                time, it is
+                her aim
+                to have a finite collection of 7 models, which will represent all the essential types of shoes that a
+                woman
+                should have
+                in her wardrobe.</p>
         </div>
     </div>
 
@@ -141,34 +191,28 @@
 
 
 
-    <h2>1981</h2>
-
-
-
-
-
-    <h2>2017</h2>
-
-    <p>Today, Bartels is steered by Eva Bartels, the great-granddaughter of Louie and Emma Bartels. The love for shoes
-        has
-        always flown through Eva's veins. With a degree in shoe craft from Milan, numerous years spent on industry
-        research, and
-        learning the family business in and out, Eva revived Bartels Damernes Sko in 2017 as Bartels since 1920 - but
-        with her
-        own, unique twist. With a curious mindset that creatively plays with modern nostalgia, Eva blends the original
-        Bartels
-        designs with new, precious materials. Now, Eva has launched three Bartels since 1920 models, and in time, it is
-        her aim
-        to have a finite collection of 7 models, which will represent all the essential types of shoes that a woman
-        should have
-        in her wardrobe.</p>
-
-
-
-
-
 
     <footer>
+        <div class="grid_1_1_1_1_1">
+            <img src="assets/testfooter.png" alt="test1">
+            <img src="assets/testfooter.png" alt="test2">
+            <img src="assets/testfooter.png" alt="test3">
+            <img src="assets/testfooter.png" alt="test4">
+            <img src="assets/testfooter.png" alt="test5">
+        </div>
+
+        <a class="link" href="kontakt.html">
+            <h2>Do you want to try the Bartels on?</h2>
+        </a>
+
+        <div class="kontakt">
+            <p>eva@bartelssince1920.com</p>
+            <p>phone +45 40 92 02 97</p>
+        </div>
+        <div class="kontakt2">
+            <img class="insta" src="assets/instagramlogo.png" alt="instagramlogo">
+            <img class="face" src="assets/facebooklogo.png" alt="facebooklogo">
+        </div>
     </footer>
 
 </body>
