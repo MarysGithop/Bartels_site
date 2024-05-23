@@ -20,8 +20,10 @@ p {
   color: var(--primary);
 }
 
-* {
+/* * {
   background-color: var(--secondary);
-}
+} */
 
-/*footer tertiary*/
+/*footer tertiary*/ /*Har udkommenteret, da det var dette der gjorde at baggrunden fik en anden farve i footer*/
+
+/***********FOOTER************/
