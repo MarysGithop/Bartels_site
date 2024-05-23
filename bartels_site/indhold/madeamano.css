@@ -1,0 +1,14 @@
+.del1 {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding: 20px;
+  position: relative;
+}
+
+.del1 .top-right {
+  grid-column: 2;
+  justify-self: end;
+  align-self: start;
+  height: auto;
+  max-width: 100%;
+}
