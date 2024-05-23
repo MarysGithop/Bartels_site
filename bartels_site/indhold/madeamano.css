@@ -1,8 +1,12 @@
+img {
+  width: 100%;
+  height: auto;
+}
+
 .del1 {
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr auto;
-  padding: 20px;
   position: relative;
 }
 
@@ -14,6 +18,74 @@
 
 .overskrift {
   grid-row-start: 2;
+  grid-column-start: 2;
+}
+
+.del2 {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  position: relative;
+}
+
+.tekst1 {
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.del3 {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  position: relative;
+  padding: 20px;
+}
+
+.saks {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.strandstol {
+  grid-row-start: 1;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  padding: 20px;
+}
+
+.kaffe {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  padding: 20px;
+}
+
+.sko {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  padding: 20px;
+}
+
+.del4 {
+  text-align: center;
+  padding: 30px;
+}
+
+.del5 {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  position: relative;
+}
+
+.bund {
+  grid-row-start: 1;
+  grid-row-end: 2;
   grid-column-start: 2;
   grid-column-end: 3;
 }
