@@ -1,14 +1,19 @@
 .del1 {
   display: grid;
+  grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr auto;
   padding: 20px;
   position: relative;
 }
 
 .del1 .top-right {
-  grid-column: 2;
-  justify-self: end;
-  align-self: start;
-  height: auto;
-  max-width: 100%;
+  grid-row-start: 1;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.overskrift {
+  grid-row-start: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
 }
