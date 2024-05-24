@@ -11,42 +11,48 @@ img {
 }
 /* -------- WEB --------- */
 @media (min-width: 700px) {
-  /*****************FOOTER*********************/
-  footer {
-    background-color: #9ea289;
-    margin-top: 100px;
-  }
-
-  .grid_1_1_1_1_1 {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 10px;
-    padding-top: 80px;
-    padding-bottom: 30px;
-  }
-
-  .link {
-    position: absolute;
+  /*Burger menue - linje*/
+  .menu-line {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     height: 60px;
-    left: 35%;
+    padding: 0 20px;
+    font-size: 0.8rem;
   }
-  .kontakt {
-    gap: 10px;
-    margin: 30px;
+  .logo img {
+    height: 50px;
   }
-  .kontakt2 {
-    display: grid;
-    grid-template-columns: 1fr, 1fr;
-    width: 5%;
-    margin-left: 30px;
-    padding-bottom: 80px;
+
+  .burger-menu {
+    cursor: pointer;
   }
-  .insta {
-    grid-column: 1/2;
+  .line {
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    margin: 5px 0;
   }
-  .face {
-    grid-column: 2/3;
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 60px; /* størrelse på menu */
+    right: 0; /* placering a drop down */
+    padding: 10px;
+    z-index: 100; /* --------  gør at teksten kommer foran - bring to front*/
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+  }
+  .dropdown-content a:hover {
+    background-color: black;
+  }
+  .show {
+    display: block;
   }
 
   /*************HOVER********************/

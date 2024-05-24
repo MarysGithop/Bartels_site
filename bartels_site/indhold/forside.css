@@ -1,6 +1,11 @@
 .gridsandaler {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  margin: 5%;
+}
+.pris,
+.navn {
+  text-align: center;
 }
 
 /*****************FOOTER*********************/

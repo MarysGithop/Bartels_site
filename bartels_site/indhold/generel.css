@@ -18,6 +18,12 @@ h1 {
   font-style: normal;
 }
 
+h2 {
+  font-family: "Trirong", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 html {
   --primary: #8c615d;
   --secondary: white;
@@ -50,6 +56,50 @@ p {
 
 /* -------- WEB --------- */
 @media (min-width: 700px) {
+  /*Burger menue - linje*/
+  .menu-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 20px;
+    font-size: 0.8rem;
+  }
+  .logo img {
+    height: 50px;
+  }
+
+  .burger-menu {
+    cursor: pointer;
+  }
+  .line {
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    margin: 5px 0;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 60px; /* størrelse på menu */
+    right: 0; /* placering a drop down */
+    padding: 10px;
+    z-index: 100; /* --------  gør at teksten kommer foran - bring to front*/
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+  }
+  .dropdown-content a:hover {
+    background-color: black;
+  }
+  .show {
+    display: block;
+  }
+
   /*****************FOOTER*********************/
   footer {
     background-color: #9ea289;
@@ -67,19 +117,17 @@ p {
 
   .link {
     position: absolute;
-    justify-content: space-between;
     align-items: center;
     height: 60px;
     left: 35%;
   }
   .kontakt {
-    color: #ffff;
     gap: 10px;
     margin: 30px;
   }
   .kontakt2 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr, 1fr;
     width: 5%;
     margin-left: 30px;
     padding-bottom: 80px;
