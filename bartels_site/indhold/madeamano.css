@@ -3,6 +3,12 @@ img {
   height: auto;
 }
 
+.h2 {
+  font-size: 50px;
+  padding: 30px;
+  text-align: center;
+}
+
 .del1 {
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -19,6 +25,9 @@ img {
 .overskrift {
   grid-row-start: 2;
   grid-column-start: 2;
+  text-align: right;
+  font-size: 50px;
+  padding: 30px;
 }
 
 .del2 {
@@ -34,6 +43,7 @@ img {
   grid-row-end: 2;
 }
 
+/*------- billederne i midten af siden ------*/
 .del3 {
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -69,6 +79,8 @@ img {
   grid-column-end: 4;
   padding: 20px;
 }
+
+/*---------------------------------------*/
 
 .del4 {
   text-align: center;
