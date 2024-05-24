@@ -61,7 +61,6 @@ img {
   grid-row-start: 1;
   grid-column-start: 5;
   grid-column-end: 7;
-  padding: 20px;
 }
 
 .kaffe {
@@ -69,14 +68,12 @@ img {
   grid-row-end: 3;
   grid-column-start: 5;
   grid-column-end: 7;
-  padding: 20px;
 }
 
 .sko {
   grid-column-start: 3;
   grid-column-end: 5;
   grid-row-start: 2;
-  padding: 20px;
 }
 
 /*---------------------------------------*/
@@ -89,7 +86,7 @@ img {
 .del5 {
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   padding: 20px;
   position: relative;
 }
@@ -97,6 +94,6 @@ img {
 .bund {
   grid-row-start: 1;
   grid-row-end: 2;
-  grid-column-start: 2;
-  grid-column-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 4;
 }
