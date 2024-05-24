@@ -46,6 +46,10 @@ p {
   text-wrap: pretty;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* * {
   background-color: var(--secondary);
 } */
