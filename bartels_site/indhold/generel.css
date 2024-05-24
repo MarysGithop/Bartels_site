@@ -18,6 +18,12 @@ h1 {
   font-style: normal;
 }
 
+h2 {
+  font-family: "Trirong", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 html {
   --primary: #8c615d;
   --secondary: white;
@@ -59,6 +65,7 @@ p {
   .grid_1_1_1_1_1 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 2fr;
     gap: 10px;
     padding-top: 80px;
     padding-bottom: 30px;
