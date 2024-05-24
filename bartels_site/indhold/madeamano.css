@@ -46,37 +46,37 @@ img {
 /*------- billederne i midten af siden ------*/
 .del3 {
   display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  position: relative;
-  padding: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr 2fr 2fr 2fr;
 }
 
 .saks {
   grid-row-start: 1;
-  grid-row-end: 2;
+  grid-row-end: 4;
   grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 4;
 }
 
 .strandstol {
   grid-row-start: 1;
-  grid-column-start: 3;
-  grid-column-end: 5;
+  grid-column-start: 5;
+  grid-column-end: 7;
   padding: 20px;
 }
 
 .kaffe {
   grid-row-start: 2;
   grid-row-end: 3;
-  grid-column-start: 4;
-  grid-column-end: 5;
+  grid-column-start: 5;
+  grid-column-end: 7;
   padding: 20px;
 }
 
 .sko {
-  grid-column-start: 2;
-  grid-column-end: 4;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: ;
   padding: 20px;
 }
 
