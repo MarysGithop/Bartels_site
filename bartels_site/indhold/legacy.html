@@ -19,26 +19,29 @@
 
 <body>
     <header>
-        <div class="logo">
-            <a href="index.html"> <img src="assets/logo.png" alt="logo"></a>
-        </div>
-        <nav>
-            <div id="menuToggle">
-
-                <input type="checkbox" />
-
-                <span></span>
-                <span></span>
-                <span></span>
-                <ul id="menu">
-                    <li><a href="index.html">Forside</a></li>
-                    <li><a href="madeamano.html">Made a mando</a></li>
-                    <li><a href="shop.html">Shop</a></li>
-                    <li><a href="legacy.html">Design Legacy</a></li>
-                    <li><a href="kontakt.html">Kontakt</a></li>
-                </ul>
+        <div class="menu-line">
+            <div class="logo">
+                <a href="index.html"> <img src="assets/BARTELS_1920.png" alt="logo"></a>
             </div>
-        </nav>
+            <h3>Søgefelt</h3>
+
+            <div class="burger-menu" onclick="toggleDropdown()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="dropdown-content" id="dropdown-content">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Forside</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="legacy.html">Legacy</a></li>
+                        <li><a href="madeamano.html">Made a mano</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
 
     </header>
 
@@ -171,8 +174,6 @@
         </div>
     </div>
 
-    <dotlottie-player src="https://lottie.host/7a3b97d8-4fbd-4739-8015-5492ae22a0fc/LaCM3Sjo80.json"
-        background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
 
 
 
@@ -186,11 +187,9 @@
             <img src="assets/testfooter.png" alt="test4">
             <img src="assets/testfooter.png" alt="test5">
         </div>
-
         <a class="link" href="kontakt.html">
             <h2>Do you want to try the Bartels on?</h2>
         </a>
-
         <div class="kontakt">
             <p>eva@bartelssince1920.com</p>
             <p>phone +45 40 92 02 97</p>
@@ -200,6 +199,10 @@
             <img class="face" src="assets/facebooklogo.png" alt="facebooklogo">
         </div>
     </footer>
+
+    <script src="java.js">
+
+    </script>
 
 </body>
 
