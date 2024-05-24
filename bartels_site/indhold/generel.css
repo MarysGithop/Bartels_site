@@ -44,6 +44,7 @@ p {
   color: var(--primary);
   line-height: 2rem;
   text-wrap: pretty;
+  margin: 2%;
 }
 
 /* * {
