@@ -47,7 +47,7 @@ img {
 .del3 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 2fr 1fr 2fr 2fr 2fr;
+  margin: 20px;
 }
 
 .saks {
@@ -59,13 +59,15 @@ img {
 
 .strandstol {
   grid-row-start: 1;
-  grid-column-start: 5;
-  grid-column-end: 7;
+  grid-column-start: 4;
+  grid-column-end: 6;
+  margin-left: 50px;
+  margin-bottom: 30px;
 }
 
 .kaffe {
   grid-row-start: 2;
-  grid-row-end: 3;
+  grid-row-end: 4;
   grid-column-start: 5;
   grid-column-end: 7;
 }
@@ -73,7 +75,9 @@ img {
 .sko {
   grid-column-start: 3;
   grid-column-end: 5;
-  grid-row-start: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  object-fit: cover;
 }
 
 /*---------------------------------------*/
