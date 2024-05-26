@@ -173,7 +173,7 @@ a {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 2fr;
     gap: 10px;
-    padding-top: 80px;
+    padding-top: 60px;
     padding-bottom: 30px;
   }
 
