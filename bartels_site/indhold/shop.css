@@ -64,10 +64,6 @@ img {
   }
 
   /*************HOVER********************/
-  .grid {
-    font-size: 1rem;
-    text-align: center;
-  }
 
   .grid_1_1_1 {
     display: grid;
@@ -111,7 +107,7 @@ img {
     justify-content: center;
     align-items: center;
     color: #8fb996;
-    font-size: 60px;
+    font-size: 40px;
     font-weight: bold;
     text-decoration: none;
     transition: opacity 0.5s ease;

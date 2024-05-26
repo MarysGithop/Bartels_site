@@ -61,11 +61,9 @@ a {
 
 /*footer tertiary*/
 
-/*FOOTER*/
-
 /* -------- WEB --------- */
 @media (min-width: 700px) {
-  /*Burger menue - linje*/
+  /*Burger menu - line*/
   .menu-line {
     display: flex;
     justify-content: space-between;
@@ -90,10 +88,16 @@ a {
   .dropdown-content {
     display: none;
     position: absolute;
-    top: 60px; /* størrelse på menu */
-    right: 0; /* placering a drop down */
+    top: 60px; /* size of menu */
+    right: 0; /* position of drop down */
     padding: 10px;
-    z-index: 100; /* --------  gør at teksten kommer foran - bring to front*/
+    z-index: 100; /* bring to front */
+  }
+
+  .dropdown-content nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
   }
 
   .dropdown-content a {
