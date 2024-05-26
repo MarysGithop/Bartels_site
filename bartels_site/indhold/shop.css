@@ -55,11 +55,20 @@ img {
     display: block;
   }
 
+  /***************OVERSKRIFT***************/
+
+  .overskrift_shop {
+    font-size: 3rem;
+    margin: 10%;
+    text-align: center;
+  }
+
   /*************HOVER********************/
   .grid_1_1_1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 0.2cm;
+    margin: 5px;
   }
   .grid_1_1_1 img {
     align-self: stretch;
@@ -70,6 +79,7 @@ img {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 0.2cm;
+    margin: 5px;
   }
   .grid_1_1_1_1 img {
     align-self: stretch;
