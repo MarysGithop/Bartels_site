@@ -14,28 +14,34 @@
     <header>
         <div class="menu-line">
             <div class="logo">
-                <a href="index.html"> <img src="assets/BARTELS_1920.png" alt="logo"></a>
+                <a href="index.html"><img src="assets/BARTELS_1920.png" alt="logo"></a>
             </div>
-            <h3>Søgefelt</h3>
+
+            <form action="/search" method="get" class="search-form">
+                <input type="text" name="q" placeholder="Søg...">
+                <button type="submit">Søg</button>
+            </form>
 
             <div class="burger-menu" onclick="toggleDropdown()">
                 <div class="line"></div>
                 <div class="line"></div>
                 <div class="line"></div>
             </div>
-            <div class="dropdown-content" id="dropdown-content">
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Forside</a></li>
-                        <li><a href="shop.html">Shop</a></li>
-                        <li><a href="legacy.html">Legacy</a></li>
-                        <li><a href="madeamano.html">Made a mano</a></li>
-                        <li><a href="kontakt.html">Kontakt</a></li>
-                    </ul>
-                </nav>
-            </div>
+        </div>
+
+        <div class="dropdown-content" id="dropdown-content">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Forside</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="legacy.html">Legacy</a></li>
+                    <li><a href="madeamano.html">Made a mano</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
+
     <main>
         <h2 class="overskrift_shop">Get ready for summer with timeless Danish design, <br>meticulously handcrafted in
             Italy</br>

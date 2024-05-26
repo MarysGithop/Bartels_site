@@ -63,7 +63,7 @@ a {
 
 /* -------- WEB --------- */
 @media (min-width: 700px) {
-  /*Burger menu - line*/
+  /* Burger menu - line */
   .menu-line {
     display: flex;
     justify-content: space-between;
@@ -72,19 +72,64 @@ a {
     padding: 0 20px;
     font-size: 0.8rem;
   }
+
   .logo img {
     height: 50px;
   }
 
+  .search-form {
+    flex-grow: 1; /* Allow the search form to grow and take available space */
+    display: flex;
+    justify-content: center; /* Center the search form */
+    margin: 0 20px; /* Add some margin for spacing */
+  }
+
+  .search-form input[type="text"] {
+    width: 100%; /* Take full width */
+    max-width: 300px; /* Optional: Limit the maximum width */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    font-size: 1rem;
+  }
+
+  .search-form button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    font-size: 1rem;
+  }
+
+  .search-form button:hover {
+    background-color: #555;
+  }
+
   .burger-menu {
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
   }
+
   .line {
     width: 20px;
     height: 2px;
-    background-color: black;
-    margin: 5px 0;
+    background-color: black; /* Your existing rule */
+    margin: 3px 0; /* Adjust spacing between lines */
   }
+
+  /* Add this new rule to ensure the lines are black */
+  .burger-menu .line {
+    width: 20px;
+    height: 2px;
+    background-color: black !important; /* Ensure the lines are black */
+    margin: 3px 0; /* Adjust spacing between lines */
+  }
+
   .dropdown-content {
     display: none;
     position: absolute;
@@ -92,6 +137,8 @@ a {
     right: 0; /* position of drop down */
     padding: 10px;
     z-index: 100; /* bring to front */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    backdrop-filter: blur(5px); /* Optional: adds a blur effect to the background */
   }
 
   .dropdown-content nav ul {
@@ -106,13 +153,15 @@ a {
     display: block;
     text-decoration: none;
   }
+
   .dropdown-content a:hover {
     background-color: black;
+    color: white; /* Change text color on hover for better contrast */
   }
+
   .show {
     display: block;
   }
-
   /*****************FOOTER*********************/
   footer {
     background-color: #9ea289;

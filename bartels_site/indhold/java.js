@@ -6,3 +6,11 @@ function toggleDropdown() {
     dropdownContent.style.display = "block";
   }
 }
+function toggleDropdown() {
+  var dropdown = document.getElementById("dropdown-content");
+  if (dropdown.classList.contains("show")) {
+    dropdown.classList.remove("show");
+  } else {
+    dropdown.classList.add("show");
+  }
+}
