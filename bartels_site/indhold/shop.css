@@ -64,6 +64,11 @@ img {
   }
 
   /*************HOVER********************/
+  .grid {
+    font-size: 1rem;
+    text-align: center;
+  }
+
   .grid_1_1_1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
