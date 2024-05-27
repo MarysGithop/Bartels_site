@@ -26,7 +26,7 @@ h2 {
 
 .contact_info {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
 }
 
 .bundbillede {
@@ -34,4 +34,11 @@ h2 {
   width: 50%;
   height: auto;
   margin-left: 25%;
+}
+
+@media (min-width: 700px) {
+  .contact_info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
