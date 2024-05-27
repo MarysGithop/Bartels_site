@@ -21,26 +21,31 @@
     <header>
         <div class="menu-line">
             <div class="logo">
-                <a href="index.html"> <img src="assets/BARTELS_1920.png" alt="logo"></a>
+                <a href="index.html"><img src="assets/BARTELS_1920.png" alt="logo"></a>
             </div>
-            <h3>Søgefelt</h3>
+
+            <form action="/search" method="get" class="search-form">
+                <input type="text" name="q" placeholder="Søg...">
+                <button type="submit">Søg</button>
+            </form>
 
             <div class="burger-menu" onclick="toggleDropdown()">
                 <div class="line"></div>
                 <div class="line"></div>
                 <div class="line"></div>
             </div>
-            <div class="dropdown-content" id="dropdown-content">
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Forside</a></li>
-                        <li><a href="shop.html">Shop</a></li>
-                        <li><a href="legacy.html">Legacy</a></li>
-                        <li><a href="madeamano.html">Made a mano</a></li>
-                        <li><a href="kontakt.html">Kontakt</a></li>
-                    </ul>
-                </nav>
-            </div>
+        </div>
+
+        <div class="dropdown-content" id="dropdown-content">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Forside</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="legacy.html">Legacy</a></li>
+                    <li><a href="madeamano.html">Made a mano</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
         </div>
 
     </header>
@@ -180,12 +185,12 @@
 
 
     <footer>
-        <div class="grid_1_1_1_1_1">
-            <img src="assets/testfooter.png" alt="test1">
-            <img src="assets/testfooter.png" alt="test2">
-            <img src="assets/testfooter.png" alt="test3">
-            <img src="assets/testfooter.png" alt="test4">
-            <img src="assets/testfooter.png" alt="test5">
+        <div>
+            <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                type="module"></script>
+
+            <dotlottie-player src="https://lottie.host/38c9e04b-b33d-446d-ace9-b7bf75017478/WWF7SBQPoa.json"
+                background="transparent" speed="1" style="width: 100%; height: auto;" loop autoplay></dotlottie-player>
         </div>
         <a class="link" href="kontakt.html">
             <h2>Do you want to try the Bartels on?</h2>
