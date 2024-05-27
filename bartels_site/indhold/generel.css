@@ -228,10 +228,7 @@ footer {
   height: 60px;
   left: 35%;
 }
-.kontakt {
-  gap: 10px;
-  margin: 30px;
-}
+
 .kontakt2 {
   display: grid;
   grid-template-columns: 1fr, 1fr;
