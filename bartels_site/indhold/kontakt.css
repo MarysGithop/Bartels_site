@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 img {
+  display: grid;
+  place-items: center;
   width: 50%;
   align-content: center;
   height: auto;
