@@ -53,15 +53,7 @@ a {
   text-align: center;
 }
 
-/* * {
-  background-color: var(--secondary);
-} */
-
-/*footer tertiary*/ /*Har udkommenteret, da det var dette der gjorde at baggrunden fik en anden farve i footer*/
-
-/*footer tertiary*/
-
-/* -------- WEB --------- */
+/* Default styles for larger screens */
 @media (min-width: 700px) {
   /* Burger menu - line */
   .menu-line {
@@ -122,14 +114,6 @@ a {
     margin: 3px 0; /* Adjust spacing between lines */
   }
 
-  /* Add this new rule to ensure the lines are black */
-  .burger-menu .line {
-    width: 20px;
-    height: 2px;
-    background-color: black !important; /* Ensure the lines are black */
-    margin: 3px 0; /* Adjust spacing between lines */
-  }
-
   .dropdown-content {
     display: none;
     position: absolute;
@@ -162,42 +146,101 @@ a {
   .show {
     display: block;
   }
-  /*****************FOOTER*********************/
-  footer {
-    background-color: #9ea289;
-    margin-top: 100px;
-  }
+}
 
-  .grid_1_1_1_1_1 {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 2fr;
-    gap: 10px;
-    padding-top: 60px;
-    padding-bottom: 30px;
-  }
-
-  .link {
-    position: absolute;
+/* Styles for mobile screens (max-width: 700px) */
+@media (max-width: 700px) {
+  .menu-line {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     height: 60px;
-    left: 35%;
+    padding: 0 10px;
+    font-size: 0.8rem;
   }
-  .kontakt {
-    gap: 10px;
-    margin: 30px;
+
+  .logo img {
+    height: 40px;
   }
-  .kontakt2 {
-    display: grid;
-    grid-template-columns: 1fr, 1fr;
-    width: 5%;
-    margin-left: 30px;
-    padding-bottom: 80px;
+
+  .search-form {
+    display: none; /* Hide search form on mobile */
   }
-  .insta {
-    grid-column: 1/2;
+
+  .burger-menu {
+    display: flex;
   }
-  .face {
-    grid-column: 2/3;
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%; /* Full width dropdown on mobile */
+    padding: 10px;
+    z-index: 100; /* bring to front */
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly more opaque for mobile */
+    backdrop-filter: blur(5px); /* Optional: adds a blur effect to the background */
   }
+
+  .dropdown-content nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+  }
+
+  .dropdown-content a:hover {
+    background-color: black;
+    color: white; /* Change text color on hover for better contrast */
+  }
+
+  .show {
+    display: block;
+  }
+}
+
+/*****************FOOTER*********************/
+footer {
+  background-color: #9ea289;
+  margin-top: 100px;
+}
+
+.grid_1_1_1_1_1 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 2fr;
+  gap: 10px;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+.link {
+  position: absolute;
+  align-items: center;
+  height: 60px;
+  left: 35%;
+}
+.kontakt {
+  gap: 10px;
+  margin: 30px;
+}
+.kontakt2 {
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  width: 5%;
+  margin-left: 30px;
+  padding-bottom: 80px;
+}
+.insta {
+  grid-column: 1/2;
+}
+.face {
+  grid-column: 2/3;
 }
