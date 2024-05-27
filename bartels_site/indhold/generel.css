@@ -204,6 +204,11 @@ a {
   .show {
     display: block;
   }
+
+  .link {
+    height: 60px;
+    left: 2%;
+  }
 }
 
 /*****************FOOTER*********************/
