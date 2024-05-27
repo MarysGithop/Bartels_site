@@ -50,3 +50,20 @@
 .billedeafopbevaring {
   width: 70%;
 }
+
+.container {
+  position: relative;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.lottie {
+  position: absolute;
+  top: 13%;
+  left: 81%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
