@@ -55,7 +55,12 @@ a {
   color: #ffff;
   text-align: center;
 }
-
+.line {
+  width: 20px;
+  height: 2px;
+  background-color: black; /* Your existing rule */
+  margin: 3px 0; /* Adjust spacing between lines */
+}
 /* Default styles for larger screens */
 @media (min-width: 700px) {
   /* Burger menu - line */
@@ -110,13 +115,6 @@ a {
     height: 24px;
   }
 
-  .line {
-    width: 20px;
-    height: 2px;
-    background-color: black; /* Your existing rule */
-    margin: 3px 0; /* Adjust spacing between lines */
-  }
-
   .dropdown-content {
     display: none;
     position: absolute;
@@ -168,10 +166,6 @@ a {
 
   .search-form {
     display: none; /* Hide search form on mobile */
-  }
-
-  .burger-menu {
-    display: flex;
   }
 
   .dropdown-content {
