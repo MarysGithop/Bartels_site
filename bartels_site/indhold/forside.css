@@ -50,24 +50,29 @@ footer {
 /*************FOOTER SLUT********************/
 
 .video {
+  position: relative; /* Gør det muligt at absolut positionere tekst indenfor containeren */
+  width: 1000px; /* Samme bredde som videoen */
+  height: 780px; /* Samme højde som videoen */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.video {
+  width: 100%;
+  height: 100%; /* Sørg for at videoen fylder hele containeren */
+}
+
 .overlay-text {
   position: absolute;
-  right: 29%;
-  top: 310%;
-  font-size: 2rem;
+  bottom: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-.videotekst {
-  color: #fef9eb;
-}
-
+.videotekst,
 .videotekst1 {
   color: #fef9eb;
-  font-size: 2.5rem;
-  text-align: center;
+  font-size: 3rem;
 }
