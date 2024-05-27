@@ -55,6 +55,8 @@ img {
   grid-row-end: 4;
   grid-column-start: 1;
   grid-column-end: 4;
+  margin: 20px;
+  padding: 40px;
 }
 
 .strandstol {
@@ -62,22 +64,26 @@ img {
   grid-column-start: 4;
   grid-column-end: 6;
   margin-left: 50px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .kaffe {
   grid-row-start: 2;
   grid-row-end: 4;
-  grid-column-start: 5;
-  grid-column-end: 7;
+  grid-column-start: 4;
+  grid-column-end: 6;
+  margin-right: 10px;
+  padding-right: 10px;
 }
 
 .sko {
-  grid-column-start: 3;
-  grid-column-end: 5;
+  grid-column-start: 2;
+  grid-column-end: 4;
   grid-row-start: 3;
   grid-row-end: 4;
   object-fit: cover;
+  margin: 20px;
+  padding: 40px;
 }
 
 /*---------------------------------------*/
