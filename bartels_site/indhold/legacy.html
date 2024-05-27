@@ -23,6 +23,14 @@
 </head>
 
 <body>
+
+
+
+
+
+
+
+
     <header>
         <div class="menu-line">
             <div class="logo">
@@ -55,7 +63,19 @@
 
     </header>
 
-    <img src="assets/legacy.webp" alt="legacyforsidebillede">
+    <div class="container">
+        <img src="assets/legacy.webp" alt="legacyforsidebillede" class="image">
+        <div class="lottie">
+            <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                type="module"></script>
+
+            <dotlottie-player src="https://lottie.host/7a3b97d8-4fbd-4739-8015-5492ae22a0fc/LaCM3Sjo80.json"
+                background="transparent" speed="1" style="width: 1200px; height: 300px;" loop
+                autoplay></dotlottie-player>
+        </div>
+    </div>
+
+
 
     <div class="overskrift">
         <h1 class="bartelsdesignlegacy">The Bartels Design Legacy</h1>
@@ -84,7 +104,7 @@
                 prevail today.</p>
         </div>
         <div>
-            <h2>1920</h2>
+            <h2 class="årstal">1920</h2>
         </div>
         <div>
             <p>In the 1920's, Bartels Damernes Sko took off, and the brand quickly became known for its feminine and
@@ -108,6 +128,8 @@
                 see them today.</p>
         </div>
     </section>
+
+    <video src="https://sustaincph.com/kea/05_indhold/bartels_legacy1.mp4"></video>
 
     <h2 class="årstal">1963</h2>
 
@@ -198,12 +220,13 @@
                 background="transparent" speed="1" style="width: 3000px; height: 300px;" loop
                 autoplay></dotlottie-player>
         </div>
-        <a class="link" href="kontakt.html">
+
+        <a href="kontakt.html">
             <h2>Do you want to try the Bartels on?</h2>
         </a>
-        <div class="kontakt">
-            <p>eva@bartelssince1920.com</p>
-            <p>phone +45 40 92 02 97</p>
+
+        <div>
+            <p class="kontakt">eva@bartelssince1920.com <br>phone +45 40 92 02 97 </br></p>
         </div>
         <div class="kontakt2">
             <img class="insta" src="assets/instagramlogo.png" alt="instagramlogo">

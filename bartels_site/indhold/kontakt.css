@@ -4,12 +4,11 @@
   box-sizing: border-box;
 }
 img {
-  width: 50%;
-  align-content: center;
+  width: 100%;
   height: auto;
 }
 
-body {
+section {
   text-align: center;
 }
 
@@ -28,4 +27,11 @@ h2 {
 .contact_info {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.bundbillede {
+  display: grid;
+  width: 50%;
+  height: auto;
+  margin-left: 25%;
 }
