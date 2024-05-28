@@ -20,6 +20,7 @@
 /*tden øverste overskrift på siden*/
 .overskrift {
   background-color: rgb(213, 204, 204);
+  padding: 10%;
 }
 
 .bartelsdesignlegacy {
@@ -36,6 +37,7 @@
 /*the legacy timeline overskrift*/
 .timeline {
   text-align: center;
+  padding: 10%;
 }
 
 .årstal {
@@ -53,6 +55,7 @@
 
 .container {
   position: relative;
+  display: grid;
 }
 
 .image {
@@ -66,4 +69,10 @@
   left: 81%;
   transform: translate(-50%, -50%);
   z-index: 1;
+}
+
+.video_legacy {
+  padding: 5%;
+  align-content: center;
+  width: 80%;
 }
