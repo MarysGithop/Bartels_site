@@ -205,6 +205,13 @@ a {
     height: 60px;
     left: 2%;
   }
+  .lottiemobil {
+    position: absolute;
+    top: 40%;
+    left: 9%;
+    width: 20px;
+    height: 30px;
+  }
 }
 
 /*****************FOOTER*********************/
