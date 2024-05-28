@@ -11,6 +11,7 @@
   .grid_legacy1920 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding: 2%;
   }
   h2 {
     text-align: center;
@@ -72,7 +73,12 @@
 }
 
 .video_legacy {
-  padding: 5%;
-  align-content: center;
+  padding: 3%;
+  margin-left: 10%;
   width: 80%;
+}
+
+.bartelsinterview {
+  text-align: center;
+  padding: 6%;
 }
