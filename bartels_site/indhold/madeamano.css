@@ -3,6 +3,10 @@ img {
   height: auto;
 }
 
+/*------- det her er til mobil site ------*/
+@media (max-width: 700px) {
+}
+
 .h2 {
   font-size: 50px;
   padding: 30px;
