@@ -3,107 +3,136 @@ img {
   height: auto;
 }
 
-.h2 {
-  font-size: 50px;
-  padding: 30px;
-  text-align: center;
-}
-
-.del1 {
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr auto;
-  position: relative;
-}
-
-.del1 .top-right {
-  grid-row-start: 1;
-  grid-column-start: 2;
-  grid-column-end: 3;
-}
-
 .overskrift {
-  grid-row-start: 2;
-  grid-column-start: 2;
+  font-size: 30px;
   text-align: right;
-  font-size: 50px;
-  padding: 30px;
+  padding: 20px;
 }
-
 .del2 {
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr;
   padding: 20px;
-  position: relative;
 }
 
-.tekst1 {
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-
-/*------- billederne i midten af siden ------*/
-.del3 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  margin: 20px;
-}
-
-.saks {
-  grid-row-start: 1;
-  grid-row-end: 4;
-  grid-column-start: 1;
-  grid-column-end: 4;
-  margin: 20px;
-  padding: 40px;
-}
-
-.strandstol {
-  grid-row-start: 1;
-  grid-column-start: 4;
-  grid-column-end: 6;
-  margin-left: 50px;
-  margin-bottom: 10px;
-}
-
-.kaffe {
-  grid-row-start: 2;
-  grid-row-end: 4;
-  grid-column-start: 4;
-  grid-column-end: 6;
-  margin-right: 10px;
-  padding-right: 10px;
-}
-
+.saks,
+.strandstol,
+.kaffe,
 .sko {
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  object-fit: cover;
-  margin: 20px;
-  padding: 40px;
+  display: none;
 }
 
-/*---------------------------------------*/
-
-.del4 {
+.h2 {
+  font-size: 30px;
   text-align: center;
-  padding: 30px;
 }
 
-.del5 {
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr;
-  padding: 20px;
-  position: relative;
-}
+/*------- det her er til desktop site ------*/
+@media (min-width: 768px) {
+  .h2 {
+    font-size: 50px;
+    padding: 30px;
+    text-align: center;
+  }
 
-.bund {
-  grid-row-start: 1;
-  grid-row-end: 2;
-  grid-column-start: 3;
-  grid-column-end: 4;
+  .del1 {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr auto;
+    position: relative;
+  }
+
+  .del1 .top-right {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .overskrift {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    text-align: right;
+    font-size: 50px;
+    padding: 30px;
+  }
+
+  .del2 {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    position: relative;
+  }
+
+  .tekst1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  /*------- billederne i midten af siden ------*/
+  .del3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 20px;
+  }
+  .saks,
+  .strandstol,
+  .kaffe,
+  .sko {
+    display: block;
+  }
+  .saks {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin: 20px;
+    padding: 40px;
+  }
+
+  .strandstol {
+    grid-row-start: 1;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    margin-left: 50px;
+    margin-bottom: 10px;
+  }
+
+  .kaffe {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    margin-right: 10px;
+    padding-right: 10px;
+  }
+
+  .sko {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    object-fit: cover;
+    margin: 20px;
+    padding: 40px;
+  }
+
+  /*---------------------------------------*/
+
+  .del4 {
+    text-align: center;
+    padding: 30px;
+  }
+
+  .del5 {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    padding: 20px;
+    position: relative;
+  }
+
+  .bund {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
 }
