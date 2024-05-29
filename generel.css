@@ -248,3 +248,8 @@ footer {
 .face {
   grid-column: 2/3;
 }
+
+.aboutus {
+  text-align: left;
+  margin-left: 3%;
+}
